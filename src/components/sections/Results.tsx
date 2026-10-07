@@ -156,7 +156,7 @@ function StudentCard({ result }: { result: typeof RESULTS[0] }) {
 
 export default function Results() {
   return (
-    <section id="results" className="py-24 bg-surface-hover relative">
+    <section id="results" className="py-24 bg-surface-hover relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.div

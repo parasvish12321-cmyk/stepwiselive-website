@@ -162,9 +162,9 @@ export default function Courses() {
             </div>
 
             <div className="mb-8 sm:mb-10 flex flex-col items-start gap-1">
-              <div className="flex items-center gap-3 sm:gap-4">
-                <span className="text-[18px] sm:text-[20px] font-semibold text-text-muted line-through decoration-text-muted/40">₹499</span>
-                <span className="text-[40px] sm:text-[48px] font-display font-extrabold text-text-primary leading-none tracking-tight">₹249</span>
+              <div className="flex items-center gap-3 sm:gap-4 flex-nowrap">
+                <span className="text-[18px] sm:text-[20px] font-semibold text-text-muted line-through decoration-text-muted/40 whitespace-nowrap">₹499</span>
+                <span className="text-[40px] sm:text-[48px] font-display font-extrabold text-text-primary leading-none tracking-tight whitespace-nowrap">₹199</span>
               </div>
               <div className="bg-[#10b981]/10 text-[#10b981] text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.15em] px-2.5 sm:px-3 py-1 rounded-full mt-2">
                 Launch Offer

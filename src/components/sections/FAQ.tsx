@@ -32,7 +32,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-16 sm:py-24 bg-surface-hover relative">
+    <section className="py-16 sm:py-24 bg-surface-hover relative overflow-hidden">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-primary mb-3 sm:mb-4">

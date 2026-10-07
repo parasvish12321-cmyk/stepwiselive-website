@@ -125,32 +125,7 @@ export default function PortalOverview() {
               })}
             </div>
 
-            {/* Mobile Expanded Content (shown below tabs) */}
-            <div className="lg:hidden bg-white rounded-2xl p-5 border border-border shadow-sm mb-6">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeStageData.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.2 }}
-                  className="space-y-4"
-                >
-                  <div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-text-secondary mb-1">What You Do</div>
-                    <div className="text-[14px] font-medium text-text-primary leading-snug">{activeStageData.whatYouDo}</div>
-                  </div>
-                  <div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-text-secondary mb-1">StepWise Provides</div>
-                    <div className="text-[14px] font-medium text-text-primary leading-snug">{activeStageData.stepWiseProvides}</div>
-                  </div>
-                  <div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-[#5B5BD6] mb-1">Outcome</div>
-                    <div className="text-[14px] font-bold text-[#10b981]">{activeStageData.outcome}</div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
+
 
             {/* Desktop Vertical Accordion */}
             <div className="hidden lg:flex flex-col gap-2">
@@ -634,6 +609,33 @@ export default function PortalOverview() {
             </div>
           </div>
 
+        </div>
+        
+        {/* Mobile Expanded Content (shown below portal visual) */}
+        <div className="lg:hidden mt-6 bg-white rounded-2xl p-5 border border-border shadow-sm">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeStageData.id}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="space-y-4"
+            >
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-text-secondary mb-1">What You Do</div>
+                <div className="text-[14px] font-medium text-text-primary leading-snug">{activeStageData.whatYouDo}</div>
+              </div>
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-text-secondary mb-1">StepWise Provides</div>
+                <div className="text-[14px] font-medium text-text-primary leading-snug">{activeStageData.stepWiseProvides}</div>
+              </div>
+              <div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-[#5B5BD6] mb-1">Outcome</div>
+                <div className="text-[14px] font-bold text-[#10b981]">{activeStageData.outcome}</div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </section>

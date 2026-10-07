@@ -26,7 +26,7 @@ export default function FounderStory() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="w-full sm:w-10/12 lg:w-5/12 mx-auto relative"
+            className="w-[85%] sm:w-10/12 lg:w-5/12 mx-auto relative"
           >
             <div className="aspect-[4/5] rounded-[24px] overflow-hidden bg-surface border border-border relative group shadow-[var(--shadow-portal)]">
               {/* Real image */}
