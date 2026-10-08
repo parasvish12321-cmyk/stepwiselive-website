@@ -3,7 +3,6 @@ import Hero from "@/components/sections/Hero";
 import FounderStory from "@/components/sections/FounderStory";
 import WhyStepWise from "@/components/sections/WhyStepWise";
 import PortalOverview from "@/components/sections/PortalOverview";
-import PortalTutorial from "@/components/sections/PortalTutorial";
 import Results from "@/components/sections/Results";
 import Courses from "@/components/sections/Courses";
 import CallPredictor from "@/components/sections/CallPredictor";
@@ -19,7 +18,6 @@ export default function Home() {
         <FounderStory />
         <WhyStepWise />
         <PortalOverview />
-        <PortalTutorial />
         <Results />
         <Courses />
         <CallPredictor />
