@@ -5,29 +5,27 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "next start",
+    "start": "next build && next start",
     "lint": "eslint",
     "git:auto": "node scripts/git-auto-sync.js",
     "dev:sync": "concurrently \"npm run dev\" \"npm run git:auto\""
   },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "framer-motion": "^14.0.0",
-    "lucide-react": "^1.52.0",
-    "next": "16.3.8",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "tailwind-merge": "^3.7.0"
-  },
-  "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "chokidar": "^5.0.0",
+    "clsx": "^2.1.1",
     "concurrently": "^10.0.5",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
+    "framer-motion": "^14.0.0",
+    "lucide-react": "^1.52.0",
+    "next": "16.3.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.7.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

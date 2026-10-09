@@ -14,7 +14,7 @@ const RESULTS = [
     after: "185",
     metric: "Mock Score",
     outcome: "Converted IIM Indore",
-    review: "Stepwise gave me structure when my preparation felt scattered. The regular practice and mock analysis helped me understand exactly where I was losing marks.",
+    review: "Stepwise stood out for its affordability, quality, and genuine one-on-one guidance. The constant mentor support made a big difference in my preparation and helped me clear my IIM Indore interview. Stepwise played an important role in making my IIM dream a reality.",
     image: "/images/students/vasu-sharma.jpg",
   },
   {
@@ -25,7 +25,7 @@ const RESULTS = [
     after: "98.5",
     metric: "Percentile",
     outcome: "Converted IIM Kozhikode",
-    review: "The mentors are incredibly supportive. They didn't just teach concepts, they taught me how to think and approach the exam strategically.",
+    review: "StepWise played a huge role in my IPMAT journey and helped me get into IIM Kozhikode. The resources and community support made my preparation much more structured. It gave me the right direction and confidence throughout the process.",
     image: "/images/students/archita-agarwal.png",
   },
   {
@@ -36,7 +36,7 @@ const RESULTS = [
     after: "Final List",
     metric: "Journey",
     outcome: "Converted IIM Shillong",
-    review: "I started with zero prep, but the guided path and daily targets made everything manageable. Truly the best investment for my career.",
+    review: "Preparing for my IIM interview was stressful, but Stepwise made the journey much easier. The mock interviews and personal feedback helped me improve my responses and confidence. The guidance I received played an important role in my journey and helped me secure offers from four IIMs, including IIM Shillong.",
     image: "/images/students/arpit-bhargav.jpg",
   },
   {
@@ -47,7 +47,7 @@ const RESULTS = [
     after: "210",
     metric: "Mock Score",
     outcome: "Converted IIM Ranchi",
-    review: "The portal's detailed analysis is a game changer. It highlighted exactly where I was going wrong and helped me improve my weak areas.",
+    review: "I’m Chetana, an IIM Ranchi IPM student. StepWise’s resources, mock interviews, and personalised guidance gave me the confidence to perform my best. I’m truly grateful to the mentors for their constant support throughout my journey.",
     image: "/images/students/chetna-m-malager.png",
   }
 ];
@@ -139,10 +139,6 @@ function StudentCard({ result }: { result: typeof RESULTS[0] }) {
             </p>
           </div>
           
-          <div className="pt-4 border-t border-white/15 shrink-0">
-            <h3 className="font-bold text-white text-[16px] mb-0.5">{result.name}</h3>
-            <div className="text-[13px] text-white/80 font-semibold mb-2 sm:mb-4">{result.outcome}</div>
-          </div>
           
           {/* subtle tap hint */}
           <div className="absolute top-4 right-4 bg-white/10 rounded-full p-2 opacity-60">
