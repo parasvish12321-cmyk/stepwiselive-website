@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "start": "next build && next start",
+    "start": "next start",
+    "postinstall": "npm run build",
     "lint": "eslint",
     "git:auto": "node scripts/git-auto-sync.js",
     "dev:sync": "concurrently \"npm run dev\" \"npm run git:auto\""
