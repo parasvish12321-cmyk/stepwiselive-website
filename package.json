@@ -12,6 +12,7 @@
     "dev:sync": "concurrently \"npm run dev\" \"npm run git:auto\""
   },
   "dependencies": {
+    "@swc/helpers": "0.5.23",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
